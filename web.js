@@ -2,6 +2,9 @@ let darkImg = chrome.runtime.getURL("bg.png")
 let originalStyleContent = document.querySelector("style").textContent
 let lightImg = "https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png"
 
+const DARK_THEME = "dark"
+const LIGHT_THEME = "light"
+
 const setStyleContent = (img) => `
     ${originalStyleContent}
 
@@ -51,8 +54,8 @@ const setStyleContent = (img) => `
       }
       .toggle label {
         cursor: pointer;
-        width: 75px;
-        height: 34px;
+        width: 65px;
+        height: 24px;
         background: rgba(0, 0, 0, 0.27);
         display: block;
         border-radius: 40px;
@@ -63,8 +66,8 @@ const setStyleContent = (img) => `
         position: absolute;
         top: 2px;
         left: 2px;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background: #fff;
         border-radius: 40px;
         -webkit-transition: 0.3s;
@@ -100,7 +103,7 @@ const setStyleContent = (img) => `
       }
       `
 
-document.querySelector("body").className = "dark"
+document.querySelector("body").className = localStorage.getItem("theme") || "dark"
 document.querySelector("style").textContent = setStyleContent(darkImg)
 
 const toggle = document.createElement("div")
@@ -113,6 +116,7 @@ const input = document.createElement("input")
 input.setAttribute("type", "checkbox")
 input.setAttribute("id", "toggle-switch")
 input.onchange = (event) => handleTheme(event)
+input.checked = localStorage.getItem("theme") === LIGHT_THEME
 
 const label = document.createElement("label")
 label.setAttribute("for", "toggle-switch")
@@ -130,22 +134,39 @@ toggle.appendChild(input)
 toggle.appendChild(label)
 toggle.appendChild(day)
 
-
 const handleTheme = ({
     target
 }) => {
     if (target.checked) {
         document.querySelector("style").textContent = setStyleContent(lightImg)
         document.querySelector("body").className = "web"
+        localStorage.setItem("theme", LIGHT_THEME)
     } else {
         document.querySelector("style").textContent = setStyleContent(darkImg)
         document.querySelector("body").className = "dark"
+        localStorage.setItem("theme", DARK_THEME)
     }
 }
 
-const appContainer = document.querySelector("div#app");
-document.body.insertBefore(toggle, appContainer)
+const addToggle = () => {
+    const appContainer = document.querySelector("div#app");
+    document.body.insertBefore(toggle, appContainer)
+}
 
-console.log(darkImg)
+// Check if loader is still in the DOM before inserting
+let interval
+
+const checkLoader = () => {
+    console.log('logged!')
+    const loader = [document.querySelector("#initial_startup"), document.querySelector("#startup")]
+    if (loader[0] === null && loader[1] === null) {
+        addToggle()
+        clearInterval(interval)
+    }
+}
+
+interval = setInterval(function () {
+    checkLoader()
+}, 500)
+
 console.log("I'm here!!!")
-console.log(document.querySelector("style").textContent)

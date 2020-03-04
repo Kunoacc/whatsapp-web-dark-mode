@@ -4,7 +4,6 @@
     "description": "A chrome extension to activate dark mode on whatsapp web",
     "manifest_version": 2,
     "incognito": "split",
-    "permissions": ["tabs"],
     "icons": {
         "128": "icons/128.png",
         "64": "icons/64.png",
