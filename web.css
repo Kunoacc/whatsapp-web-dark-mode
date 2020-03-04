@@ -1,0 +1,830 @@
+.dark {
+    --active-tab-marker: #009688;
+    --active-tab-marker-rgb: 0, 150, 136;
+    --app-background-stripe: #113632;
+    --app-background-stripe-rgb: 17, 54, 50;
+    --audio-progress-incoming: #0ba448;
+    --audio-progress-incoming-rgb: 11, 164, 72;
+    --audio-progress-outgoing: #6b8280;
+    --audio-progress-outgoing-rgb: 107, 130, 128;
+    --audio-progress-played-incoming: #068ecf;
+    --audio-progress-played-incoming-rgb: 6, 142, 207;
+    --audio-progress-played-outgoing: #0390cf;
+    --audio-progress-played-outgoing-rgb: 3, 144, 207;
+    --audio-track-incoming: #364147;
+    --audio-track-incoming-rgb: 54, 65, 71;
+    --audio-track-outgoing: #294a47;
+    --audio-track-outgoing-rgb: 41, 74, 71;
+    --avatar-background: #101d24;
+    --avatar-background-rgb: 16, 29, 36;
+    --avatar-placeholder-background: #223138;
+    --avatar-placeholder-background-rgb: 34, 49, 56;
+    --avatar-placeholder-primary: #6d7e86;
+    --avatar-placeholder-primary-rgb: 109, 126, 134;
+    --background-app: #e0e0e0;
+    --background-app-rgb: 224, 224, 224;
+    --background-default: #101d24;
+    --background-default-rgb: 16, 29, 36;
+    --background-default-active: #212d33;
+    --background-default-active-rgb: 33, 45, 51;
+    --background-default-hover: #17242b;
+    --background-default-hover-rgb: 23, 36, 43;
+    --border-bubble: hsla(0, 0%, 100%, .06);
+    --border-bubble-rgb: 255, 255, 255;
+    --border-chatlist: #1c282f;
+    --border-chatlist-rgb: 28, 40, 47;
+    --border-default: #303030;
+    --border-default-rgb: 48, 48, 48;
+    --border-input-active: #00bfa5;
+    --border-input-active-rgb: 0, 191, 165;
+    --border-panel: #2c383e;
+    --border-panel-rgb: 44, 56, 62;
+    --border-strong: #d9d9d9;
+    --border-strong-rgb: 217, 217, 217;
+    --border-stronger: hsla(0, 0%, 100%, .08);
+    --border-stronger-rgb: 255, 255, 255;
+    --butterbar-background-battery: #fa685e;
+    --butterbar-background-battery-rgb: 249.69711, 103.94798, 93.50289;
+    --butterbar-background-connection: #fed859;
+    --butterbar-background-connection-rgb: 254, 216, 89;
+    --butterbar-background-default: #9de1fe;
+    --butterbar-background-default-rgb: 157, 225, 254;
+    --butterbar-background-update: #1de9b6;
+    --butterbar-background-update-rgb: 29, 233, 182;
+    --butterbar-primary: hsla(0, 0%, 80%, .96);
+    --butterbar-primary-rgb: 204, 204, 204;
+    --butterbar-secondary: hsla(0, 0%, 80%, .85);
+    --butterbar-secondary-rgb: 204, 204, 204;
+    --button-alternative: #00a5f4;
+    --button-alternative-rgb: 0, 165, 244;
+    --button-background-disabled: #e6e6e6;
+    --button-background-disabled-rgb: 230, 230, 230;
+    --button-bubble: rgba(0, 150, 136, .7);
+    --button-bubble-rgb: 0, 150, 136;
+    --button-media-viewer: #202c33;
+    --button-media-viewer-rgb: 32, 44, 51;
+    --button-primary: #fff;
+    --button-primary-rgb: 255, 255, 255;
+    --button-primary-background: #05cd51;
+    --button-primary-background-rgb: 5.44623, 204.85377, 81.46347;
+    --button-primary-background-hover: #06d253;
+    --button-primary-background-hover-rgb: 5.57831, 209.82169, 83.43905;
+    --button-round-background: #09e85e;
+    --button-round-background-rgb: 8.64769, 232.25231, 93.88923;
+    --button-secondary: #07bc4c;
+    --button-secondary-rgb: 7, 188, 76;
+    --button-secondary-background: #101d24;
+    --button-secondary-background-rgb: 16, 29, 36;
+    --button-secondary-hover: #05cd51;
+    --button-secondary-hover-rgb: 5.44623, 204.85377, 81.46347;
+    --chat-marker: #999;
+    --chat-marker-rgb: 153, 153, 153;
+    --chat-marker-admin: #07bc4c;
+    --chat-marker-admin-rgb: 7, 188, 76;
+    --chat-marker-admin-border: rgba(7, 188, 76, .7);
+    --chat-marker-admin-border-rgb: 7, 188, 76;
+    --chat-marker-border: hsla(0, 0%, 60%, .7);
+    --chat-marker-border-rgb: 153, 153, 153;
+    --compose-background: #101d24;
+    --compose-background-rgb: 16, 29, 36;
+    --compose-panel-background: #202c33;
+    --compose-panel-background-rgb: 32, 44, 51;
+    --conversation-panel-background: #0e1a20;
+    --conversation-panel-background-rgb: 14.43077, 26.15577, 32.46923;
+    --conversation-panel-border: hsla(0, 0%, 100%, .08);
+    --conversation-panel-border-rgb: 255, 255, 255;
+    --danger: #d70000;
+    --danger-rgb: 215, 0, 0;
+    --dropdown-background: #202c33;
+    --dropdown-background-rgb: 32, 44, 51;
+    --focus: rgba(0, 165, 244, .4);
+    --focus-rgb: 0, 165, 244;
+    --highlight: #009688;
+    --highlight-rgb: 0, 150, 136;
+    --icon: #777e83;
+    --icon-rgb: 119, 126, 131;
+    --icon-ack: rgba(3, 155, 229, .8);
+    --icon-ack-rgb: 3, 155, 229;
+    --icon-darwin: #4f585d;
+    --icon-darwin-rgb: 79, 88, 93;
+    --icon-disabled: #414c52;
+    --icon-disabled-rgb: 65, 76, 82;
+    --icon-disabled-darwin: #aeb1b3;
+    --icon-disabled-darwin-rgb: 174, 177, 179;
+    --icon-disabled-win32: #9b9b9b;
+    --icon-disabled-win32-rgb: 155, 155, 155;
+    --icon-lighter: hsla(0, 0%, 100%, .27);
+    --icon-lighter-rgb: 255, 255, 255;
+    --icon-search-back: #038aca;
+    --icon-search-back-rgb: 3, 138, 202;
+    --icon-strong: #cfd2d3;
+    --icon-strong-rgb: 207, 210, 211;
+    --icon-strong-darwin: #fff;
+    --icon-strong-darwin-rgb: 255, 255, 255;
+    --icon-strong-win32: #cfd2d3;
+    --icon-strong-win32-rgb: 207, 210, 211;
+    --icon-win32: #494948;
+    --icon-win32-rgb: 73, 73, 72;
+    --incoming-background: #202c33;
+    --incoming-background-rgb: 32, 44, 51;
+    --incoming-background-deeper: #1c262c;
+    --incoming-background-deeper-rgb: 28, 38, 44;
+    --incoming-primary: #767c80;
+    --incoming-primary-rgb: 118, 124, 128;
+    --input-placeholder: #70777c;
+    --input-placeholder-rgb: 112, 119, 124;
+    --intro-background: #263339;
+    --intro-background-rgb: 38, 51, 57;
+    --inverse: #fff;
+    --inverse-rgb: 255, 255, 255;
+    --link: #039be5;
+    --link-rgb: 3, 155, 229;
+    --live-location-footer-background: rgba(16, 29, 36, .9);
+    --live-location-footer-background-rgb: 16, 29, 36;
+    --live-location-glow: rgba(37, 211, 102, .3);
+    --live-location-glow-rgb: 37, 211, 102;
+    --live-location-glow-stale: rgba(255, 0, 31, .3);
+    --live-location-glow-stale-rgb: 255, 0, 31;
+    --location-cluster-background: #101d24;
+    --location-cluster-background-rgb: 16, 29, 36;
+    --media-editor-control: #1c313f;
+    --media-editor-control-rgb: 28, 49, 63;
+    --media-viewer-background: #101d24;
+    --media-viewer-background-rgb: 16, 29, 36;
+    --menu-tabs-list-active: #6cea91;
+    --menu-tabs-list-active-rgb: 108.28579, 234.05421, 145.4638;
+    --modal-backdrop: rgba(16, 29, 36, .85);
+    --modal-backdrop-rgb: 16, 29, 36;
+    --modal-backdrop-solid: #202c33;
+    --modal-backdrop-solid-rgb: 32, 44, 51;
+    --modal-background: #202c33;
+    --modal-background-rgb: 32, 44, 51;
+    --notification-biz-background: #19262c;
+    --notification-biz-background-rgb: 25, 38, 44;
+    --notification-e2e-background: #1a262a;
+    --notification-e2e-background-rgb: 26, 38, 42;
+    --notification-text: hsla(0, 0%, 100%, .4);
+    --notification-text-rgb: 255, 255, 255;
+    --outgoing-background: #113632;
+    --outgoing-background-rgb: 17, 54, 50;
+    --outgoing-background-deeper: #0f2f2b;
+    --outgoing-background-deeper-rgb: 15, 47, 43;
+    --overlay: #010203;
+    --overlay-rgb: 1, 2, 3;
+    --panel-background: #202c33;
+    --panel-background-rgb: 32, 44, 51;
+    --panel-background-active: #1e292f;
+    --panel-background-active-rgb: 30, 41, 47;
+    --panel-background-colored: #184f4e;
+    --panel-background-colored-rgb: 24, 79, 78;
+    --panel-background-colored-deeper: #009688;
+    --panel-background-colored-deeper-rgb: 0, 150, 136;
+    --panel-background-deep: #171f25;
+    --panel-background-deep-rgb: 23, 31, 37;
+    --panel-background-deeper: #1d282e;
+    --panel-background-deeper-rgb: 29, 40, 46;
+    --panel-background-hover: #1f2a31;
+    --panel-background-hover-rgb: 31, 42, 49;
+    --panel-background-lighter: #1d282e;
+    --panel-background-lighter-rgb: 29, 40, 46;
+    --panel-primary: hsla(0, 0%, 100%, .35);
+    --panel-primary-rgb: 255, 255, 255;
+    --payment-amount: #008c7f;
+    --payment-amount-rgb: 0, 139.8, 126.752;
+    --payment-status-failed: #f44336;
+    --payment-status-failed-rgb: 244, 67, 54;
+    --payment-status-processing: hsla(0, 0%, 100%, .45);
+    --payment-status-processing-rgb: 255, 255, 255;
+    --payment-status-success: #07bc4c;
+    --payment-status-success-rgb: 7, 188, 76;
+    --payment-status-waiting: #00a5f4;
+    --payment-status-waiting-rgb: 0, 165, 244;
+    --photopicker-overlay-background: hsla(0, 0%, 40%, .8);
+    --photopicker-overlay-background-rgb: 102, 102, 102;
+    --primary: #a5aaad;
+    --primary-rgb: 165, 170, 173;
+    --primary-strong: #d4d5d7;
+    --primary-strong-rgb: 212, 213, 215;
+    --primary-stronger: hsla(240, 4%, 95%, .87);
+    --primary-stronger-rgb: 241, 241, 242;
+    --primary-title: hsla(220, 4%, 84%, .97);
+    --primary-title-rgb: 212, 213, 215;
+    --product-thumb-background: #202c33;
+    --product-thumb-background-rgb: 32, 44, 51;
+    --rich-text-panel-background: #202c33;
+    --rich-text-panel-background-rgb: 32, 44, 51;
+    --secondary: hsla(0, 0%, 100%, .6);
+    --secondary-rgb: 255, 255, 255;
+    --secondary-light: hsla(0, 0%, 100%, .25);
+    --secondary-light-rgb: 255, 255, 255;
+    --secondary-lighter: hsla(0, 0%, 100%, .45);
+    --secondary-lighter-rgb: 255, 255, 255;
+    --secondary-stronger: hsla(0, 0%, 100%, .8);
+    --secondary-stronger-rgb: 255, 255, 255;
+    --shadow: #000;
+    --shadow-rgb: 0, 0, 0;
+    --shadow-light: rgba(0, 0, 0, .08);
+    --shadow-light-rgb: 0, 0, 0;
+    --spinner-incoming: #636b70;
+    --spinner-incoming-rgb: 99, 107, 112;
+    --spinner-outgoing: #587270;
+    --spinner-outgoing-rgb: 88, 114, 112;
+    --status-background: #000;
+    --status-background-rgb: 0, 0, 0;
+    --status-background-hover: #262626;
+    --status-background-hover-rgb: 38, 38, 38;
+    --status-primary: #fff;
+    --status-primary-rgb: 255, 255, 255;
+    --status-secondary: hsla(0, 0%, 100%, .55);
+    --status-secondary-rgb: 255, 255, 255;
+    --status-secondary-stronger: #b3b3b3;
+    --status-secondary-stronger-rgb: 179, 179, 179;
+    --success: #07bc4c;
+    --success-rgb: 7, 188, 76;
+    --suspicious-background: rgba(244, 67, 54, .08);
+    --suspicious-background-rgb: 244, 67, 54;
+    --teal-hover: #00ab97;
+    --teal-hover-rgb: 0, 171, 151;
+    --teal-pale: #5fb9b0;
+    --teal-pale-rgb: 95, 185, 176;
+    --tooltip-background: rgba(89, 89, 89, .85);
+    --tooltip-background-rgb: 89.25, 89.25, 89.25;
+    --unread-background: #202c33;
+    --unread-background-rgb: 32, 44, 51;
+    --unread-bar-background: rgba(1, 2, 3, .3);
+    --unread-bar-background-rgb: 1, 2, 3;
+    --unread-marker-background: #00af9c;
+    --unread-marker-background-rgb: 0, 175, 156;
+    --unread-marker-text: #101d24;
+    --unread-marker-text-rgb: 16, 29, 36;
+    --video-player-background: #000;
+    --video-player-background-rgb: 0, 0, 0;
+    --video-primary: #fff;
+    --video-primary-rgb: 255, 255, 255;
+    --voip-accept-background: #39d575;
+    --voip-accept-background-rgb: 57, 213, 117;
+    --voip-background: #262626;
+    --voip-background-rgb: 38, 38, 38;
+    --voip-background-deep: #000;
+    --voip-background-deep-rgb: 0, 0, 0;
+    --voip-primary: #fff;
+    --voip-primary-rgb: 255, 255, 255;
+    --voip-reject-background: #e54b40;
+    --voip-reject-background-rgb: 229, 75, 64;
+    --win32-title-primary: #fff;
+    --win32-title-primary-rgb: 255, 255, 255;
+    --system-message-background: #0f222c;
+    --system-message-background-rgb: 15, 34, 44;
+    --system-message-text: hsla(0, 0%, 100%, .4);
+    --system-message-text-rgb: 255, 255, 255
+}
+
+.dark .color-active-tab-marker {
+    color: #009688
+}
+
+.dark .color-app-background-stripe {
+    color: #113632
+}
+
+.dark .color-audio-progress-incoming {
+    color: #0ba448
+}
+
+.dark .color-audio-progress-outgoing {
+    color: #6b8280
+}
+
+.dark .color-audio-progress-played-incoming {
+    color: #068ecf
+}
+
+.dark .color-audio-progress-played-outgoing {
+    color: #0390cf
+}
+
+.dark .color-audio-track-incoming {
+    color: #364147
+}
+
+.dark .color-audio-track-outgoing {
+    color: #294a47
+}
+
+.dark .color-avatar-background {
+    color: #101d24
+}
+
+.dark .color-avatar-placeholder-background {
+    color: #223138
+}
+
+.dark .color-avatar-placeholder-primary {
+    color: #6d7e86
+}
+
+.dark .color-background-app {
+    color: #e0e0e0
+}
+
+.dark .color-background-default {
+    color: #101d24
+}
+
+.dark .color-background-default-active {
+    color: #212d33
+}
+
+.dark .color-background-default-hover {
+    color: #17242b
+}
+
+.dark .color-border-bubble {
+    color: hsla(0, 0%, 100%, .06)
+}
+
+.dark .color-border-chatlist {
+    color: #1c282f
+}
+
+.dark .color-border-default {
+    color: #303030
+}
+
+.dark .color-border-input-active {
+    color: #00bfa5
+}
+
+.dark .color-border-panel {
+    color: #2c383e
+}
+
+.dark .color-border-strong {
+    color: #d9d9d9
+}
+
+.dark .color-border-stronger {
+    color: hsla(0, 0%, 100%, .08)
+}
+
+.dark .color-butterbar-background-battery {
+    color: #fa685e
+}
+
+.dark .color-butterbar-background-connection {
+    color: #fed859
+}
+
+.dark .color-butterbar-background-default {
+    color: #9de1fe
+}
+
+.dark .color-butterbar-background-update {
+    color: #1de9b6
+}
+
+.dark .color-butterbar-primary {
+    color: hsla(0, 0%, 80%, .96)
+}
+
+.dark .color-butterbar-secondary {
+    color: hsla(0, 0%, 80%, .85)
+}
+
+.dark .color-button-alternative {
+    color: #00a5f4
+}
+
+.dark .color-button-background-disabled {
+    color: #e6e6e6
+}
+
+.dark .color-button-bubble {
+    color: rgba(0, 150, 136, .7)
+}
+
+.dark .color-button-media-viewer {
+    color: #202c33
+}
+
+.dark .color-button-primary {
+    color: #fff
+}
+
+.dark .color-button-primary-background {
+    color: #05cd51
+}
+
+.dark .color-button-primary-background-hover {
+    color: #06d253
+}
+
+.dark .color-button-round-background {
+    color: #09e85e
+}
+
+.dark .color-button-secondary {
+    color: #07bc4c
+}
+
+.dark .color-button-secondary-background {
+    color: #101d24
+}
+
+.dark .color-button-secondary-hover {
+    color: #05cd51
+}
+
+.dark .color-chat-marker {
+    color: #999
+}
+
+.dark .color-chat-marker-admin {
+    color: #07bc4c
+}
+
+.dark .color-chat-marker-admin-border {
+    color: rgba(7, 188, 76, .7)
+}
+
+.dark .color-chat-marker-border {
+    color: hsla(0, 0%, 60%, .7)
+}
+
+.dark .color-compose-background {
+    color: #101d24
+}
+
+.dark .color-compose-panel-background {
+    color: #202c33
+}
+
+.dark .color-conversation-panel-background {
+    color: #0e1a20
+}
+
+.dark .color-conversation-panel-border {
+    color: hsla(0, 0%, 100%, .08)
+}
+
+.dark .color-danger {
+    color: #d70000
+}
+
+.dark .color-dropdown-background {
+    color: #202c33
+}
+
+.dark .color-focus {
+    color: rgba(0, 165, 244, .4)
+}
+
+.dark .color-highlight {
+    color: #009688
+}
+
+.dark .color-icon {
+    color: #777e83
+}
+
+.dark .color-icon-ack {
+    color: rgba(3, 155, 229, .8)
+}
+
+.dark .color-icon-darwin {
+    color: #4f585d
+}
+
+.dark .color-icon-disabled {
+    color: #414c52
+}
+
+.dark .color-icon-disabled-darwin {
+    color: #aeb1b3
+}
+
+.dark .color-icon-disabled-win32 {
+    color: #9b9b9b
+}
+
+.dark .color-icon-lighter {
+    color: hsla(0, 0%, 100%, .27)
+}
+
+.dark .color-icon-search-back {
+    color: #038aca
+}
+
+.dark .color-icon-strong {
+    color: #cfd2d3
+}
+
+.dark .color-icon-strong-darwin {
+    color: #fff
+}
+
+.dark .color-icon-strong-win32 {
+    color: #cfd2d3
+}
+
+.dark .color-icon-win32 {
+    color: #494948
+}
+
+.dark .color-incoming-background {
+    color: #202c33
+}
+
+.dark .color-incoming-background-deeper {
+    color: #1c262c
+}
+
+.dark .color-incoming-primary {
+    color: #767c80
+}
+
+.dark .color-input-placeholder {
+    color: #70777c
+}
+
+.dark .color-intro-background {
+    color: #263339
+}
+
+.dark .color-inverse {
+    color: #fff
+}
+
+.dark .color-link {
+    color: #039be5
+}
+
+.dark .color-live-location-footer-background {
+    color: rgba(16, 29, 36, .9)
+}
+
+.dark .color-live-location-glow {
+    color: rgba(37, 211, 102, .3)
+}
+
+.dark .color-live-location-glow-stale {
+    color: rgba(255, 0, 31, .3)
+}
+
+.dark .color-location-cluster-background {
+    color: #101d24
+}
+
+.dark .color-media-editor-control {
+    color: #1c313f
+}
+
+.dark .color-media-viewer-background {
+    color: #101d24
+}
+
+.dark .color-menu-tabs-list-active {
+    color: #6cea91
+}
+
+.dark .color-modal-backdrop {
+    color: rgba(16, 29, 36, .85)
+}
+
+.dark .color-modal-backdrop-solid,
+.dark .color-modal-background {
+    color: #202c33
+}
+
+.dark .color-notification-biz-background {
+    color: #19262c
+}
+
+.dark .color-notification-e2e-background {
+    color: #1a262a
+}
+
+.dark .color-notification-text {
+    color: hsla(0, 0%, 100%, .4)
+}
+
+.dark .color-outgoing-background {
+    color: #113632
+}
+
+.dark .color-outgoing-background-deeper {
+    color: #0f2f2b
+}
+
+.dark .color-overlay {
+    color: #010203
+}
+
+.dark .color-panel-background {
+    color: #202c33
+}
+
+.dark .color-panel-background-active {
+    color: #1e292f
+}
+
+.dark .color-panel-background-colored {
+    color: #184f4e
+}
+
+.dark .color-panel-background-colored-deeper {
+    color: #009688
+}
+
+.dark .color-panel-background-deep {
+    color: #171f25
+}
+
+.dark .color-panel-background-deeper {
+    color: #1d282e
+}
+
+.dark .color-panel-background-hover {
+    color: #1f2a31
+}
+
+.dark .color-panel-background-lighter {
+    color: #1d282e
+}
+
+.dark .color-panel-primary {
+    color: hsla(0, 0%, 100%, .35)
+}
+
+.dark .color-payment-amount {
+    color: #008c7f
+}
+
+.dark .color-payment-status-failed {
+    color: #f44336
+}
+
+.dark .color-payment-status-processing {
+    color: hsla(0, 0%, 100%, .45)
+}
+
+.dark .color-payment-status-success {
+    color: #07bc4c
+}
+
+.dark .color-payment-status-waiting {
+    color: #00a5f4
+}
+
+.dark .color-photopicker-overlay-background {
+    color: hsla(0, 0%, 40%, .8)
+}
+
+.dark .color-primary {
+    color: #a5aaad
+}
+
+.dark .color-primary-strong {
+    color: #d4d5d7
+}
+
+.dark .color-primary-stronger {
+    color: hsla(240, 4%, 95%, .87)
+}
+
+.dark .color-primary-title {
+    color: hsla(220, 4%, 84%, .97)
+}
+
+.dark .color-product-thumb-background,
+.dark .color-rich-text-panel-background {
+    color: #202c33
+}
+
+.dark .color-secondary {
+    color: hsla(0, 0%, 100%, .6)
+}
+
+.dark .color-secondary-light {
+    color: hsla(0, 0%, 100%, .25)
+}
+
+.dark .color-secondary-lighter {
+    color: hsla(0, 0%, 100%, .45)
+}
+
+.dark .color-secondary-stronger {
+    color: hsla(0, 0%, 100%, .8)
+}
+
+.dark .color-shadow {
+    color: #000
+}
+
+.dark .color-shadow-light {
+    color: rgba(0, 0, 0, .08)
+}
+
+.dark .color-spinner-incoming {
+    color: #636b70
+}
+
+.dark .color-spinner-outgoing {
+    color: #587270
+}
+
+.dark .color-status-background {
+    color: #000
+}
+
+.dark .color-status-background-hover {
+    color: #262626
+}
+
+.dark .color-status-primary {
+    color: #fff
+}
+
+.dark .color-status-secondary {
+    color: hsla(0, 0%, 100%, .55)
+}
+
+.dark .color-status-secondary-stronger {
+    color: #b3b3b3
+}
+
+.dark .color-success {
+    color: #07bc4c
+}
+
+.dark .color-suspicious-background {
+    color: rgba(244, 67, 54, .08)
+}
+
+.dark .color-teal-hover {
+    color: #00ab97
+}
+
+.dark .color-teal-pale {
+    color: #5fb9b0
+}
+
+.dark .color-tooltip-background {
+    color: rgba(89, 89, 89, .85)
+}
+
+.dark .color-unread-background {
+    color: #202c33
+}
+
+.dark .color-unread-bar-background {
+    color: rgba(1, 2, 3, .3)
+}
+
+.dark .color-unread-marker-background {
+    color: #00af9c
+}
+
+.dark .color-unread-marker-text {
+    color: #101d24
+}
+
+.dark .color-video-player-background {
+    color: #000
+}
+
+.dark .color-video-primary {
+    color: #fff
+}
+
+.dark .color-voip-accept-background {
+    color: #39d575
+}
+
+.dark .color-voip-background {
+    color: #262626
+}
+
+.dark .color-voip-background-deep {
+    color: #000
+}
+
+.dark .color-voip-primary {
+    color: #fff
+}
+
+.dark .color-voip-reject-background {
+    color: #e54b40
+}
+
+.dark .color-win32-title-primary {
+    color: #fff
+}
+
+.dark .color-system-message-background {
+    color: #0f222c
+}
+
+.dark .color-system-message-text {
+    color: hsla(0, 0%, 100%, .4)
+}

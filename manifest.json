@@ -1,0 +1,25 @@
+{
+    "name": "Whatsapp Web Dark Mode",
+    "version": "0.1",
+    "description": "A chrome extension to activate dark mode on whatsapp web",
+    "manifest_version": 2,
+    "incognito": "split",
+    "permissions": ["tabs"],
+    "icons": {
+        "128": "icons/128.png",
+        "64": "icons/64.png",
+        "32": "icons/32.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://web.whatsapp.com/"],
+        "css": ["web.css"],
+        "js": ["web.js"]
+    }],
+    "background": {
+        "scripts": ["app.js"],
+        "persistent": true
+    },
+    "web_accessible_resources": [
+        "bg.png"
+    ]
+}
