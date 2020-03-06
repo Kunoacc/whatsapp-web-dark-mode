@@ -1,9 +1,8 @@
 {
     "name": "Whatsapp Web Dark Mode",
-    "version": "0.1",
+    "version": "0.2",
     "description": "A chrome extension to activate dark mode on whatsapp web",
     "manifest_version": 2,
-    "incognito": "split",
     "icons": {
         "128": "icons/128.png",
         "64": "icons/64.png",
@@ -22,3 +21,4 @@
         "bg.png"
     ]
 }
+
