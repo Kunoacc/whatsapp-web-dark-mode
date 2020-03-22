@@ -11,96 +11,6 @@ const setStyleContent = (img) => `
     [data-asset-chat-background] {
         background-image: url("${img}") !important
     }
-    html {
-        --bg-color: #09393f;
-      }
-      html.dark-mode {
-        --bg-color: #ffffff;
-      }
-
-      body, .web, .dark {
-        -webkit-transition: 2s ease;
-        transition: 2s ease;
-      }
-
-      .toggle {
-        transform: rotate(90deg);
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-align: center;
-                align-items: center;
-        justify-content: space-around;
-        max-width: 140px;
-        z-index: 9999;
-        bottom: 75px;
-        right: -40px;
-        position: absolute;
-      }
-      .toggle span {
-        margin: 0 0.5rem;
-      }
-      .toggle input[type="checkbox"] {
-        height: 0;
-        width: 0;
-        visibility: hidden;
-      }
-      .toggle input[type="checkbox"]:checked + label {
-        background: teal;
-      }
-      .toggle input[type="checkbox"]:checked + label:after {
-        left: calc(100% - 2px);
-        -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
-      }
-      .toggle label {
-        cursor: pointer;
-        width: 65px;
-        height: 24px;
-        background: rgba(0, 0, 0, 0.27);
-        display: block;
-        border-radius: 40px;
-        position: relative;
-      }
-      .toggle label:after {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 20px;
-        height: 20px;
-        background: #fff;
-        border-radius: 40px;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-      }
-
-      .screen-reader-text {
-        border: 0;
-        clip: rect(1px, 1px, 1px, 1px);
-        -webkit-clip-path: inset(50%);
-                clip-path: inset(50%);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute !important;
-        width: 1px;
-        word-wrap: normal !important;
-      }
-
-      html {
-        height: 100%;
-      }
-
-      body {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-                justify-content: center;
-        height: 100%;
-      }
       `
 
 document.querySelector("body").className = localStorage.getItem("theme") || "dark"
@@ -153,7 +63,7 @@ const addToggle = () => {
     document.body.insertBefore(toggle, appContainer)
 }
 
-// Check if loader is still in the DOM before inserting
+// Check if loader is still in the DOM before inserting toggle
 let interval
 
 const checkLoader = () => {
@@ -168,5 +78,3 @@ const checkLoader = () => {
 interval = setInterval(function () {
     checkLoader()
 }, 500)
-
-console.log("I'm here!!!")
